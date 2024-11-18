@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Between Times Company - Presentación</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Secciones */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Presentación sobre la empresa */
+        .about {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Sección de los valores */
+        .values {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .value {
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 8px;
+            width: 25%;
+            text-align: center;
+        }
+
+        .value h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        /* Slider de productos destacados */
+        .slider {
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .slider-button.prev {
+            left: 10px;
+        }
+
+        .slider-button.next {
+            right: 10px;
+        }
+
+        /* Testimonios */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .testimonial .customer-info {
+            text-align: right;
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        /* Formulario de contacto */
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        .contact-form h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Between Times Company</h1>
+        <p>Relojes digitales innovadores para cada momento</p>
+    </header>
+
+    <!-- Presentación de la empresa -->
+    <section class="about">
+        <h2>Bienvenido a Between Times</h2>
+        <p>En Between Times Company, nos dedicamos a crear relojes digitales que combinan innovación, calidad y diseño para satisfacer las necesidades de nuestros clientes. Con nuestra tecnología de punta, cada reloj se adapta a las exigencias de quienes buscan estilo, precisión y durabilidad.</p>
+
+        <p>Desde nuestros comienzos, hemos trabajado para ofrecer productos que no solo sean funcionales, sino que también reflejen la personalidad y el estilo de quienes los llevan. Nuestros relojes están pensados para aquellos que quieren marcar la diferencia, a la vez que disfrutan de lo último en tecnología.</p>
+    </section>
+
+    <!-- Valores de la empresa -->
+    <section class="values">
+        <div class="value">
+            <h3>Innovación</h3>
+            <p>Siempre al frente de las últimas tendencias tecnológicas, nuestros relojes cuentan con funciones avanzadas que facilitan tu día a día.</p>
+        </div>
+        <div class="value">
+            <h3>Calidad</h3>
+            <p>Cada reloj está hecho con los mejores materiales, garantizando durabilidad y resistencia, para que siempre estés a tiempo.</p>
+        </div>
+        <div class="value">
+            <h3>Compromiso</h3>
+            <p>Nos comprometemos a ofrecerte productos de alta calidad y un excelente servicio al cliente, porque tu satisfacción es lo más importante.</p>
+        </div>
+    </section>
+
+    <!-- Slider de producto destacado -->
+    <section class="slider">
+        <h2>Producto Destacado</h2>
+        <div class="slider-container">
+            <img src="/Screenshot_20241114-222324_WhatsApp.jpg" ="Reloj digital">
+            <img src=""
+           
+        </div>
+        <button class="slider-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="slider-button next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <h2> Reseñas </h2>
+        <div class="testimonial">
+            <div>
+                <img src="/Screenshot_20241114_220639.jpg" alt="Cliente 1">
+            </div>
+            <div class="customer-info">
+                <p>"¡Me encanta mi reloj Between Times! No solo es elegante, sino que también tiene todas las funciones que necesito. Definitivamente una excelente compra." - Laura G.</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div>
+                <img src="/Screenshot_20241114_220355.jpg" alt="Cliente 2">
+            </div>
+            <div class="customer-info">
+                <p>"Un reloj con diseño moderno y calidad insuperable. Estoy muy satisfecho con mi compra y el servicio de atención al cliente." - Carlos M.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="contact-form">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o necesitas más información sobre nuestros productos? No dudes en ponerte en contacto con nosotros.</p>
+        <form 
+    action="https://formsubmit.co/aldairabel9@gmail.com" 
+    method="POST">
+    <input type="text" name="name" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+    <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+</form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Between Times Company | Todos los derechos reservados.</p>
+        <p>Visítanos en <a href="https://www.between-times.com" target="_blank">www.between-times.com</a></p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        function moveSlide(n) {
+            const slides = document.querySelectorAll(".slider-container img");
+            slideIndex += n;
+
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            } else if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+
+            const sliderContainer = document.querySelector(".slider-container");
+            sliderContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+    </script>
+
+</body>
+</html>
